@@ -1,0 +1,24 @@
+Steps:
+
+1. Warning has been used to suppress unnecessary message during execution.
+
+2. We read an image file named 'rice.png' and converts it to double precision for further processing
+
+3. We add salt-and-pepper noise to the original image (x) with a density of 0.01 (1% of pixels will be affected).
+
+4. We defined a 3x3 averaging filter (mask). We applied the filter to the noisy image (es) using imfilter and displayed the filtered image.
+
+5. We created a binary mask (diff) based on the absolute difference between the noisy image and the filtered image.
+
+6. We displayed the binary mask representing noisy locations.
+
+7. We Combined the filtered image and the noisy image based on the binary mask. If a pixel is identified as noisy (diff == 1), the corresponding pixel value from the filtered image is used. Otherwise, the pixel value from the noisy image is retained.
+
+8. We displayed the final recovered image.
+
+In summary, this code demonstrates a basic approach to remove salt-and-pepper noise from an image by filtering noisy regions with a simple 3x3 averaging filter. The recovered image is then displayed, highlighting the effectiveness of the denoising process.
+
+
+
+
+
